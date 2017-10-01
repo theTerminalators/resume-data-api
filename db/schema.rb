@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20170929022421) do
   create_table "skills", force: :cascade do |t|
     t.string "skill_name"
     t.integer "student_id"
+  end
 
   create_table "capstones", force: :cascade do |t|
     t.string "name"
