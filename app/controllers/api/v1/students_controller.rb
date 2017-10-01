@@ -3,4 +3,13 @@ class Api::V1::StudentsController < ApplicationController
     @students = Student.all
     render 'index.json.jbuilder'
   end
+
+  def show
+    @student = Student.find_by(id: params[:id])
+    render 'show.json.jbuilder'
+  end
+
+  def create
+    
+  end
 end
