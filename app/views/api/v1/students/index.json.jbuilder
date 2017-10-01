@@ -10,4 +10,6 @@ json.array! @students.each do |student|
   json.onlineResume student.online_resume
   json.githubUrl student.github_url
   json.photo student.photo
+  json.capstones student.capstones.each do |capstone|
+  end
 end
