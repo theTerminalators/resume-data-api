@@ -7,6 +7,10 @@ Rails.application.routes.draw do
       get '/students/:id' => 'students#show'
       delete '/students/:id' => 'students#destroy'
       patch '/students/:id' => 'students#update'
+
+      get '/experiences' => 'experiences#index'
+      get '/experiences/:id' => 'experiences#show'
+      post '/experiences' => 'experiences#create'
     end
   end
 end
