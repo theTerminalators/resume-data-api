@@ -6,6 +6,7 @@ class Api::V1::ExperiencesController < ApplicationController
 
   def show
     @experience = Experience.find_by(params[:id])
+    render 'show.json.jbuilder'
   end
 
   def create
