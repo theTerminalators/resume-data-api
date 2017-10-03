@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get '/students' => 'students#index'
+      post '/students' => 'students#create'
+      get '/students/:id' => 'students#show'
       delete '/students/:id' => 'students#destroy'
     end
   end
-
 end
